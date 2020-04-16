@@ -4,118 +4,142 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="content-language" content="ja">
-    <title>料金表 | 美容室 i･de･a</title>
+    <title>美容室 i･de･a</title>
     <meta itemprop="description" content="札幌市豊平区の美容室 i･de･a イデア">
     <meta name="description" content="札幌市豊平区の美容室 i･de･a イデア">
     <meta name="keywords" content="美容室,髪,札幌,豊平区,イデア,idea,染める,カット,シャンプー,ヴィーダテラ">
-    <!-- <meta name="viewport" content="width=device-width"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-    <script src="jquery.slicknav.min.js"></script>
-    <link href="slicknav.css" rel="stylesheet" type="text/css" media="all" /> -->
- 
-    <link href="menu.css" rel="stylesheet" type="text/css">
-    <!-- <link rel="stylesheet" type="text/css" href="menunav.css">
-    <link rel="stylesheet" type="text/css" href="centering.css">
-    <link rel="stylesheet" type="text/css" href="liqeid.css">
-    <link rel="stylesheet" type="text/css" href="ulline.css">
-    <link rel="icon" type="image/svg+xml" href="/ideahpicon.svg" />
+    <link rel="stylesheet" type="text/css" href="indexstyle.css">
+    <!-- <link rel="icon" type="image/svg+xml" href="/ideahpicon.svg" />
     <link rel="icon" href="ideaice.ico"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="instafeed.min.js"></script>
+    <script type="text/javascript">  
+        $(document).ready(function() {
+        var userFeed = new Instafeed({
+            get: 'user', //ユーザーから取得
+            userId: '5868185087', //ユーザーID(先ほど確認した'user_id')
+            sortBy: 'most-recent',//最新記事から順に取得
+            links: true , //画像リンク取得
+            limit: 4, //取得する画像数を設定
+            resolution: 'standard_resolution', //画像サイズを設定
+            template: '<li><a href="{{link}}" target="_blank"><img src="{{image}}" width="190"></a></li>',
+            accessToken: '5868185087.e52517a.7a6239f430c34140a49e44fb24c44834' //アクセストークン
+        });
+        userFeed.run();
+        });
+    </script>
 </head>
  
 <body>
-    <!-- <script type="text/javascript" charset="utf-8" src="//asumi.shinobi.jp/encount"></script> -->
-    
-    <!-- Header -->
-    <header id="global-head">
-        <h1 id="brand-logo">idea</h1>
-    </header>
+    <br>
+    <!---facebookscript-->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/ja_JP/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!---facebookscript-->
 
-    <!-- Sidebar ------------------------------------------------------------->
-    <div id="nav-toggle">
-        <div>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    
-    <aside id="sidebar">
-        <nav id="global-nav">
+    <article id="center">
+        <nav id="index-nav">
             <ul>
-                <li><a href="#" title="ショップインフォ">ショップインフォ</a></li>
-                <li><a href="#" title="料金表">料金表</a></li>
-                <li><a href="#" title="アクセス">アクセス</a></li>
-                <li><a href="#" title="カレンダー">カレンダー</a></li>
-                <li><a href="#" title="取扱商品">取扱商品</a></li>
-                <li><a href="#" title="お知らせ">お知らせ</a></li>
-                <li><a href="#" title="店内写真">店内写真 facebook</a></li>
-                <li><a href="#" title="ブログ">ブログ</a></li>
-                <li><a href="#" title="お問い合わせ">お問い合わせ</a></li>
+                <li class="price">
+                    <a href="price.html" title="料金表">
+                        <br><br><br>
+                        <span class="big">Price</span><br>
+                        <span class="small">料金表</span>
+                    </a>
+                </li>
+                <li>
+                    <object data="indexidea.svg" type="image/svg+xml" width="190" height="190" alt="美容室 イデア" title="美容室 イデア"></object>
+                </li>
+                <li class="lineup">
+                    <a href="lineup.html" title="取扱商品">
+                        <br><br><br>
+                        <span class="big">Item</span><br>
+                        <span class="small">取扱商品</span>
+                    </a>
+                </li>
+                <li class="shopinfo">
+                    <a href="info.html" title="ショップインフォ">
+                        <br><br><br>
+                        <span class="big">ShopInfo</span><br>
+                        <span class="small">ショップインフォ</span>
+                    </a>
+                </li>
+                <li class="qanda">
+                    <a href="qanda.html" title="お問い合わせ">
+                        <br><br><br>
+                        <span class="big">Q&A</span><br>
+                        <span class="small">お問い合わせ</span>
+                    </a>
+                </li>
+                <li class="access">
+                    <a href="access.html" title="アクセス">
+                        <br><br><br>
+                        <span class="big">Access</span><br>
+                        <span class="small">アクセス</span>
+                    </a>
+                </li>
+                <li class="blog">
+                    <a href="http://ideablog.blog.shinobi.jp/" title="ブログ">
+                        <br><br><br>
+                        <span class="big">Blog</span><br>
+                        <span class="small">ブログ</span>
+                    </a>
+                </li>
+                <li class="news">
+                    <a href="news.html" title="お知らせ">
+                        <br><br><br>
+                        <span class="big">News</span><br>
+                        <span class="small">お知らせ</span>
+                    </a>
+                </li>
+                <li class="calendar" title="カレンダー">
+                    <a href="calendar.html">
+                        <br><br><br>
+                        <span class="big">Calendar</span><br>
+                        <span class="small">カレンダー</span>
+                    </a>
+                </li>
+                <li class="non"></li>
+                <li class="fbicon">
+                    <a href="https://www.facebook.com/Idea-750686798294594/" title="facebook">
+                    </a>
+                </li>
+                <li class="instaicon">
+                    <a href="https://www.instagram.com/i.de.a_bs.hw.48/" title="instagram">
+                    </a>
+                </li>
             </ul>
         </nav>
-    </aside>
+    </article>
 
-    <!-- Main ---------------------------------------------------------------->
-    <main id="main">
-        <div id="main-in">
-            <section class="inner">
-                <h3>料金表</h3>
-                価格はすべて税別になります
-                <ul>
-                    <h4>カット</h4>
-                    <li>大人 <br>
-                    3,500 yen</li>
-                    <li>大学・専門学生<br>
-                    3,000 yen</li>
-                    <li>高校生まで<br>
-                    2,000 yen</li>
-                    <h4>パーマ(カット込)</h4>
-                    <li>パーマ<br>
-                    8,000 yen~</li>
-                    <li>デジタルパーマ<br>
-                    12,500 yen~</li>
-                    <li>縮毛矯正<br>
-                    15,000 yen~</li>
-                    <h4>カラー(カット別)</h4>
-                    <li>5,500 yen~</li>
-                    <h4>香草カラー</h4>
-                    <li>6,000 yen~</li>
-                </ul>
-            </section>
-        </div>
-    </main>
- 
-    <footer>
-    <div class="footer">
+    <br>
+    <footer id="center">
+        <div class="fb-like" data-href="http://idea.ifdef.jp/" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
         <br>
-        <br>
-        <br>
+        <dev id="insta_thumbnail"><ul id="instafeed"></ul></dev>
     </footer>
-    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-    <div id="overlay"></div>
-
-    <script type="text/javascript">
-        (function($) {
-            $(function () {
-                $('.sub-menu').on({
-                    'mouseenter': function () {
-                        $(this).addClass('is-active');
-                    },
-                    'mouseleave': function () {
-                        $(this).removeClass('is-active');
-                    }
-                });
-        
-        
-                $('#nav-toggle,#overlay').on('click', function() {
-                    $('body').toggleClass('open');
-                });
-            });
-        })(jQuery);
-        </script>
-    <!-- <div style="text-align: center;"><div style="display: inline-block; position: relative; z-index: 9999;"><script type="text/javascript" charset="utf-8" src="//asumi.shinobi.jp/fire?f=434"></script></div>
-</div> -->
 </body>
 </html>

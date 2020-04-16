@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-size: 14px; */
+    font-family: "Hiragino Kaku Gothic, Helvetica",sans-serif;
+    font-feature-settings:"palt";
+    -webkit-text-size-adjust: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+#center {
+    max-height: 900px;
+    min-height: 620px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+span.small {
+   font:80% "Hiragino Kaku Gothic ProN", sans-serif;
+}
+span.big {
+   font:180% "Helvetica", sans-serif;
+}
+
+#index-nav ul {
+    width: 100%;
+    max-width: 900px;
+    min-width: 620px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align:left;
+}
+#index-nav li {
+    width:198px;
+    height:198px;
+    float:left;
+    margin-left: 1px;
+    margin-bottom: 1px;
+    text-align: center;
+}
+li.non {
+    width:190px;
+    height:190px;
+    float:left;
+    display:block;
+}
+#index-nav a {
+    display:block;
+    width:100%;
+    height:100%;
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.shopinfo a {
+    background-color:#808080;
+}
+.price a {
+    background-color:#808080;
+}
+.access a {
+    background-color:#808080;
+}
+.calendar a {
+    background-color:#808080;
+}
+.lineup a {
+    background-color:#808080;
+}
+.news a {
+    background-color:#808080;
+}
+.facebook a {
+    background-color:#808080;
+}
+.qanda a {
+    background-color:#808080;
+}
+.blog a {
+    background-color:#808080;
+}
+.instagram a {
+    background-color:#808080;
+}
+.shopinfo a:hover {
+    background-color:#ff1a1a;
+}
+.price a:hover {
+    background-color:#ff931e;
+}
+.access a:hover {
+    background-color:#fff100;
+}
+.calendar a:hover {
+    background-color:#aeff00;
+}
+.lineup a:hover {
+    background-color:#00ff19;
+}
+.news a:hover {
+    background-color:#00ccff;
+}
+.facebook a:hover {
+    background-color:#1877F2;
+}
+.instagram a:hover {
+    background-color:#93278f;
+}
+.qanda a:hover {
+    background-color:#ff505f;
+}
+.blog a:hover {
+    background-color:#ff7bac;
+}
+
+
+.fbicon a {
+    display:block;
+    width:100%;
+    height:100%;
+    background: url('f_logo_gray.svg');
+    background-size: cover;
+    text-decoration:none;
+}
+
+.fbicon a:hover {
+    background: url('f_logo_color.svg');
+    background-size: cover;
+}
+
+.instaicon a {
+    display:block;
+    width:100%;
+    height:100%;
+    background: url('ig_logo_gray.svg');
+    background-size: cover;
+    text-decoration:none;
+}
+
+.instaicon a:hover {
+    background: url('IG_Glyph_Fill_color.svg');
+    background-size: cover;
+}
+
+#insta_thumbnail ul {
+    width: 100%;
+    max-width: 900px;
+    min-width: 620px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#insta_thumbnail li {
+    width:190px;
+    height:190px;
+    float:left;
+    margin-left: 1px;
+    margin-bottom: 1px;
+}
