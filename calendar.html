@@ -52,13 +52,13 @@
         <div id="main-in">
             <section class="inner">
                 <h3>カレンダー</h3>
-                <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=5jvonuil41sd47qoloivtvljjc%40group.calendar.google.com&amp;color=%23711616&amp;src=j186c30jk102r3r7n01gtitsd0%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=5jvonuil41sd47qoloivtvljjc%40group.calendar.google.com&amp;color=%23711616&amp;src=j186c30jk102r3r7n01gtitsd0%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=Asia%2FTokyo" style="border-width:0" frameborder="0" scrolling="no"></iframe>
 
                 <br>
                 <br>
 
                 <h3>予約表</h3>
-                <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=j186c30jk102r3r7n01gtitsd0%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=j186c30jk102r3r7n01gtitsd0%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=Asia%2FTokyo" style="border-width:0" frameborder="0" scrolling="no"></iframe>
             </section>
         </div>
     </main>
@@ -92,5 +92,16 @@
                 });
             })(jQuery);
         </script>
+        <style type="text/css" >
+            iframe {
+                padding-right: 10px;
+                width: 80vw;
+                height: calc(80vw * 12 / 16);
+                min-width: 400px;
+                max-width: 800px;
+                min-height: calc(400px * 12 / 16);
+                max-height: calc(800px * 12 / 16);
+              }
+        </style>
 </body>
 </html>
