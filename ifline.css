@@ -1,0 +1,13 @@
+ ul {
+ list-style-type:none;
+ text-align:left;
+ margin-left:-30px;
+ }
+ li {
+ text-decoration:none;
+ }
+ span.day{
+ float:left;
+ width:4em;
+ }
+   

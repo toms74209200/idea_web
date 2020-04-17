@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="ja">
+    <title>カレンダー | 美容室 i･de･a</title>
+    <meta itemprop="description" content="札幌市豊平区の美容室 i･de･a イデア">
+    <meta name="description" content="札幌市豊平区の美容室 i･de･a イデア">
+    <meta name="keywords" content="美容室,髪,札幌,豊平区,イデア,idea,染める,カット,シャンプー,ヴィーダテラ">
+    <!-- <meta name="viewport" content="width=device-width"> -->
+    <link href="menu.css" rel="stylesheet" type="text/css">
+    <!-- <link rel="icon" type="image/svg+xml" href="/ideahpicon.svg" />
+    <link rel="icon" href="ideaice.ico"> -->
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="global-head">
+        <a href="#"><img src="indexidea.svg" width="120" height="120" alt="美容室 イデア" title="美容室 イデア"></a>
+    </header>
+
+    <!-- Sidebar ------------------------------------------------------------->
+    <div id="nav-toggle">
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    
+    <aside id="sidebar">
+        <nav id="global-nav">
+            <ul>
+                <li class="shopinfo"><a href="#" title="ショップインフォ">ショップインフォ</a></li>
+                <li class="price"><a href="#" title="料金表">料金表</a></li>
+                <li class="access"><a href="#" title="アクセス">アクセス</a></li>
+                <li class="calendar"><a href="#" title="カレンダー">カレンダー</a></li>
+                <li class="lineup"><a href="#" title="取扱商品">取扱商品</a></li>
+                <li class="news"><a href="#" title="お知らせ">お知らせ</a></li>
+                <li class="facebook"><a href="#" title="facebook">facebook</a></li>
+                <li class="instagram"><a href="#" title="instagram">instagram</a></li>
+                <li class="blog"><a href="#" title="ブログ">ブログ</a></li>
+                <li class="qanda"><a href="#" title="お問い合わせ">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main ---------------------------------------------------------------->
+    <main id="main">
+        <div id="main-in">
+            <section class="inner">
+                <h3>カレンダー</h3>
+                <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=5jvonuil41sd47qoloivtvljjc%40group.calendar.google.com&amp;color=%23711616&amp;src=j186c30jk102r3r7n01gtitsd0%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+                <br>
+                <br>
+
+                <h3>予約表</h3>
+                <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=j186c30jk102r3r7n01gtitsd0%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=Asia%2FTokyo" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <br>
+            <br>
+            <br>
+        </footer>
+        </div>
+    
+        <div id="overlay"></div>
+    
+        <script type="text/javascript">
+            (function($) {
+                $(function () {
+                    $('.sub-menu').on({
+                        'mouseenter': function () {
+                            $(this).addClass('is-active');
+                        },
+                        'mouseleave': function () {
+                            $(this).removeClass('is-active');
+                        }
+                    });
+            
+            
+                    $('#nav-toggle,#overlay').on('click', function() {
+                        $('body').toggleClass('open');
+                    });
+                });
+            })(jQuery);
+        </script>
+</body>
+</html>
